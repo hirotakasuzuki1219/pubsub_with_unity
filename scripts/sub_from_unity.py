@@ -9,5 +9,5 @@ def callback(message):
 
 if __name__ == "__main__":
     rospy.init_node('sub')
-    sub = rospy.Subscriber('UnixTime', MyMsg , callback)
+    sub = rospy.Subscriber('MsgFromUnity', MyMsg , callback)
     rospy.spin()
